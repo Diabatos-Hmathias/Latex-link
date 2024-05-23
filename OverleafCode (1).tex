@@ -1,0 +1,173 @@
+\documentclass{article}
+\pagestyle{empty}
+\usepackage[utf8]{inputenc} 
+\usepackage[english]{babel} 
+\usepackage{url} 
+\usepackage{graphicx}
+
+\title{Web-Based Data Analysis Application Report}
+\author{Diabatos-Hmathias} 
+
+\begin{document}
+
+\maketitle
+EFRAIMIDIS XRISTOS(inf2021051)
+PAVLOS PYRINOS(inf2021191)
+\section{Introduction}
+This report presents a web-based application for data analysis. Our application allows users to load data, perform visualizations in various dimensions, explore data distributions, and compare machine learning algorithms.
+
+\section{Design Overview}
+When opened, our application allows the user to load data in to it(In the form of either an CSV or an Excel file). After the user imports their desired dataset,they are given a choice between various tabs that provide different functionalities, such as data visualizations, EDA analyses, algorithm comparison. The tabs are accessible on the left side of the screen and are quite simple to use. Among these tabs, which give further insight into the dataset, also exists one that is purely created to give information about the application and its development team.   
+
+In the next subsection we will provide a closer look into the functionalities implemented into our app.
+
+\subsection{Analysis of the app functionalities}
+
+Our app offers a comprehensive suite of tools and functionalities for exploring and analyzing data. It is divided into several tabs, each focusing on a specific aspect of data analysis:
+\begin{itemize}
+\item \textbf{2D Visualization}: This tab allows users to visualize their data in two dimensions using either Principal Component Analysis (PCA) or t-Distributed Stochastic Neighbor Embedding (t-SNE) algorithms. Users can choose between these algorithms to gain insights into the underlying structure and relationships within their data.
+
+\item \textbf{Exploratory Data Analysis (EDA)}: In this tab, users can delve deeper into their data by exploring its distribution and characteristics. They can generate histograms and boxplots for individual features, providing valuable insights into the data's underlying patterns and outliers.
+
+\item \textbf{Comparison}: This tab enables users to compare the performance of different machine learning algorithms for classification and clustering tasks. It provides options to evaluate algorithms such as Logistic Regression, Random Forest, K-Means, and Hierarchical Clustering, allowing users to select parameters and assess performance metrics such as accuracy and silhouette score.
+
+\item \textbf{Info}: The Info tab offers users detailed information about the application, including its purpose, functionality, and development team. It provides insights into how the application works, its development process, and the contributions of team members.
+\end{itemize}
+
+\section{Implementation}
+The implementation of the app was only possible with the use of the Streamlit library in Python. It's designed to make it simple for data scientists to create interactive and customizable web apps.That is because Streamlit automatically converts your Python variables, functions, and dataframes into interactive widgets like sliders, dropdowns, and buttons. Additionally,we have also used the Pandas, Seaborn, Matplotlib, and scikit-learn libraries which helped us tremendously with the data management, visualizations, and machine learning algorithms.
+
+\section{Analysis Results}
+The results of the analyses and comparisons of algorithms are presented on each tab of the application. Reports containing statistics and charts for each analysis are also provided.
+
+\section{Conclusion}
+Overall,our web application is designed to be a useful tool for data analysis. The visualization capabilities, data exploration, and the ability to compare algorithms could be of great help in the decision-making and development of machine learning models.
+
+\section{contribution of each team member}
+EFRAIMIDIS XRISTOS(inf2021051): Data handling, 2D Visualisation, Docker setup,Github version control
+
+PAVLOS PYRINOS(inf2021191): Machine learning algorithms comparison, Latex report, Uml diagram,
+ Software release life cycle.
+
+\begin{figure}[htbp]
+    \section{UML Diagram}
+    \centering
+    \includegraphics[width=1\textwidth]{UmlLight.png}
+    \caption{Activity Diagram}
+    \label{fig:example}
+\end{figure}
+
+\section{Life Cycle Model}
+We have decided to use the Incremental model for the life cicle of our app. This way we would be able to receive early feedback for our more experimental new versions of our app and be more flexible in adapting to changing requirements and market conditions. 
+
+Furthermore, in order for our app to be deployed to a broader audience,the following stages would have to be included:
+
+\subsection{Life Cycle Stages}
+
+\begin{itemize}
+\item \textbf{Initial Release Design}:
+Defining the core functional requirements and features of the application necessary for the initial release. This version will provide basic functionality and be ready for testing.
+
+\item \textbf{Initial Release Deployment}:
+Deploying the initial release of the application to a limited number of users or testing groups. This will allow for feedback collection and identification of potential issues before general release.
+
+\item \textbf{Incremental Feature Addition}:
+Developing and adding new features and functionalities to the application incrementally. These additions will be based on user feedback and market needs.
+
+\item \textbf{Expanded Deployment}:
+Releasing new versions of the application with additional features to a wider audience. This may involve expanding the initial user base or releasing to new markets.
+
+\item \textbf{Continuous Development and Improvement}:
+Continuously developing and improving the application based on feedback and changes in user needs and the market. This process repeats as the application evolves and adapts to its environment.
+\end{itemize}
+
+
+\section{References}
+The code of the application is available on GitHub: \url{https://github.com/Diabatos-Hmathias/streamlit_project}
+Repository of the Latex file:\url{https://github.com/Diabatos-Hmathias/Latex-link}
+
+\begin{figure}
+    
+    \section{App Screenshots}
+    
+    \centering
+    \includegraphics[width=1\textwidth]{image.png}
+    \caption{Screenshot1}
+    
+    \centering
+    \includegraphics[width=1\textwidth]{image (1).png}
+    \caption{Screenshot2}
+
+    \centering
+    \includegraphics[width=1\textwidth]{image (2).png}
+    \caption{Screenshot3}
+
+    \label{fig:example}
+
+\end{figure}
+
+\begin{figure}
+
+\centering
+    \includegraphics[width=1\textwidth]{image (3).png}
+    \caption{Screenshot4}
+
+\centering
+    \includegraphics[width=1\textwidth]{image (4).png}
+    \caption{Screenshot5}
+
+\centering
+    \includegraphics[width=1\textwidth]{image (5).png}
+    \caption{Screenshot6}
+
+    \label{fig:example}
+
+\end{figure}
+
+\begin{figure}
+
+\centering
+    \includegraphics[width=1\textwidth]{image (6).png}
+    \caption{Screenshot7}
+
+\centering
+    \includegraphics[width=1\textwidth]{image (7).png}
+    \caption{Screenshot8}
+
+\centering
+    \includegraphics[width=1\textwidth]{image (8).png}
+    \caption{Screenshot9}
+
+    \label{fig:example}
+
+\end{figure}
+
+\begin{figure}
+
+\centering
+    \includegraphics[width=1\textwidth]{image (9).png}
+    \caption{Screenshot10}
+
+\centering
+    \includegraphics[width=1\textwidth]{image (10).png}
+    \caption{Screenshot11}
+
+\centering
+    \includegraphics[width=1\textwidth]{image (11).png}
+    \caption{Screenshot12}
+
+    \label{fig:example}
+
+\end{figure}
+
+\begin{figure}
+
+\centering
+    \includegraphics[width=1\textwidth]{image (12).png}
+    \caption{Screenshot10}
+
+    \label{fig:example}
+
+\end{figure}
+
+\end{document}
